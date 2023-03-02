@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./src/styles/all.css">
+</head>
+
+<body>
+    <section class="card">
+        <div class="container">
+            <div class="card-first">
+                <p class="name">Eva Jonson</p>
+                <p class="position">Sales Manager</p>
+                <div class="card-first__descr">
+                    <p>
+                        I will find the best offers for you.
+                    </p>
+                    <p>
+                        My services are absolutely free.
+                    </p>
+                    <img src="./src/images/photo.png" alt="Photo">
+                </div>
+            </div>
+            <div class="card-second">
+                <div class="card-second__start">
+                    <p>Services</p>
+                </div>
+                <div class="card-second__middle">
+                    <div class="card-second__middle-item">
+                        <p>
+                            Manual tour booking
+                        </p>
+                        <p>
+                            11
+                        </p>
+                    </div>
+                    <div class="card-second__middle-item">
+                        <p>
+                            Package tours
+                        </p>
+                        <p>
+                            3
+                        </p>
+                    </div>
+                    <div class="card-second__middle-item">
+                        <p>
+                            Hotels
+                        </p>
+                        <p>
+                            1
+                        </p>
+                    </div>
+                </div>
+                <div class="card-second__finish">
+                    <p>
+                        Total
+                    </p>
+                    <p>
+                        15
+                    </p>
+                </div>
+            </div>
+            <div class="card-third">
+                <div class="card-third__header">
+                    <div class="card-third__header-first">
+                        <p>
+                            Latest reviews
+                        </p>
+                        <a href="#">
+                            All reviews
+                        </a>
+                    </div>
+                    <div class="card-third__header-second">
+                        <div class="card-third__header-second__like">
+                            <img src="./src/images/like.svg" alt="">
+                            <p>
+                                131
+                            </p>
+                        </div>
+                        <div class="card-third__header-second__comment">
+                            <img src="./src/images/comment.svg" alt="">
+                            <p>
+                                14
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="card-four">
+                <div class="card-four__comment">
+                    <div class="card-four__comment-name">
+                        <p>
+                            Samuel Jackson
+                        </p>
+                        <p>
+                            13 Apr 2022
+                        </p>
+                    </div>
+                    <div class="card-four__comment-text">
+                        <p>
+                            Hey Eva! You're cool. Nice pic!
+                        </p>
+                    </div>
+                </div>
+                <div class="card-four__comment">
+                    <div class="card-four__comment-name">
+                        <p>
+                            Angela Deimon
+                        </p>
+                        <p>
+                            10 Apr 2022
+                        </p>
+                    </div>
+                    <div class="card-four__comment-text">
+                        <p>
+                            Thanks for your services! We really liked the ocean view room. We hope to cooperate in the
+                            near future. We are sure you will do everything to make our next holiday fantastic.
+                        </p>
+                    </div>
+                </div>
+                <div class="card-four__comment">
+                    <div class="card-four__comment-name">
+                        <p>
+                            Ronald Harris
+                        </p>
+                        <p>
+                            8 Apr 2022
+                        </p>
+                    </div>
+                    <div class="card-four__comment-text">
+                        <p>
+                            Eva, hello! There is such a question: How can I contact you if I am abroad in roaming?
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <section class="form">
+        <div class="container">
+            <div class="card-five">
+                <form id="form">
+                    <textarea class="card-five__text-name" id="textName" placeholder="Your Name"></textarea>
+                    <textarea class="card-five__text" id="text" onkeydown="checkKey(event, this.form)" placeholder="Your Text"></textarea>
+                    <button type="submit" id="submitBtn" onclick="myFunction()">Send a message</button>
+                </form>
+                
+            </div>
+        </div>
+       
+    </section>
+    <script src="./src/script/app.js"></script>
+</body>
+
+</html>

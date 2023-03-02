@@ -1,0 +1,384 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap");
+* {
+  color: #333333;
+  scroll-behavior: smooth;
+  font-family: "Arial";
+  font-style: normal;
+  font-size: 16px;
+}
+
+.container {
+  width: 720px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.card-first {
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+  padding-left: 10%;
+}
+.card-first p {
+  padding-left: 12%;
+}
+.card-first p.name {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+.card-first p.position {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #808080;
+}
+.card-first__descr {
+  background: #fffbc8;
+  border: 1px solid #dadada;
+  border-radius: 5px;
+  position: relative;
+  padding: 5px;
+}
+.card-first__descr p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+.card-first__descr img {
+  position: absolute;
+  border-radius: 50%;
+  top: -80%;
+  left: -10%;
+  width: 100px;
+}
+@media (max-width: 550px) {
+  .card-first__descr img {
+    width: 70px;
+    top: -50%;
+    left: -14%;
+  }
+}
+
+.card-second {
+  margin-left: 22%;
+  padding: 15px 0 20px 0;
+}
+.card-second__start p {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 25px;
+  font-size: 13px;
+  line-height: 15px;
+}
+.card-second__middle {
+  border-top: 1px solid #dadada;
+  border-bottom: 1px solid #dadada;
+  padding: 15px 0;
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+}
+.card-second__middle-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+  border-left: 1px solid rgba(51, 51, 51, 0.2);
+}
+.card-second__middle-item p:nth-child(1) {
+  position: relative;
+  width: 90%;
+  padding: 5px;
+  font-size: 13px;
+  line-height: 26px;
+}
+.card-second__middle-item p:nth-child(1)::before {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  background: #b1e19b;
+  border-radius: 0px 3px 3px 0px;
+  height: 100%;
+  width: 80%;
+  top: 0;
+  left: 0;
+}
+.card-second__middle-item p:nth-child(2) {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 15px;
+}
+.card-second__middle-item:nth-child(2) p:nth-child(1) {
+  width: 90%;
+  position: relative;
+  padding: 5px;
+}
+.card-second__middle-item:nth-child(2) p:nth-child(1)::before {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  background: #ace2f8;
+  height: 100%;
+  width: 15%;
+  top: 0;
+  left: 0;
+}
+.card-second__middle-item:nth-child(3) p:nth-child(1) {
+  position: relative;
+  width: 90%;
+  padding: 5px;
+}
+.card-second__middle-item:nth-child(3) p:nth-child(1)::before {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  background: #ace2f8;
+  height: 100%;
+  width: 10%;
+  top: 0;
+  left: 0;
+}
+.card-second__finish {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  color: #333333;
+  width: 100%;
+}
+.card-second__finish p:nth-child(1) {
+  width: 80%;
+}
+.card-second__finish p:nth-child(2) {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+}
+
+.card-third {
+  padding-bottom: 15px;
+}
+.card-third__header {
+  display: flex;
+  justify-content: space-between;
+}
+.card-third__header-first {
+  display: flex;
+}
+.card-third__header-first p {
+  padding-right: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+}
+.card-third__header-first a {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-decoration: underline !important;
+  color: #005da1;
+  cursor: pointer;
+}
+.card-third__header-second {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-third__header-second img {
+  margin-right: 5px;
+}
+.card-third__header-second p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+}
+.card-third__header-second__like {
+  display: flex;
+  padding-right: 20px;
+}
+.card-third__header-second__comment {
+  display: flex;
+}
+
+.card-four .card-four__comment {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+.card-four .card-four__comment-name {
+  display: flex;
+}
+.card-four .card-four__comment-name p:nth-child(1) {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+}
+.card-four .card-four__comment-name p:nth-child(2) {
+  padding-left: 8px;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 19px;
+  color: #808080;
+}
+.card-four .card-four__comment-text {
+  background: #f2fbff;
+  border: 1px solid #c4cbcf;
+  box-shadow: 0px 4px 10px rgba(128, 128, 128, 0.1);
+  padding: 20px 20px;
+  margin-top: 20px;
+  position: relative;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+}
+.card-four .card-four__comment-text::before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  border-bottom: 15px solid #c4cbcf;
+  border-right: 15px solid transparent;
+}
+.card-four .card-four__comment-text::after {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: 21.5px;
+  border-bottom: 15px solid #f2fbff;
+  border-right: 15px solid transparent;
+}
+
+.form {
+  background: #f2f2f2;
+}
+.form .card-five {
+  padding: 20px 0;
+}
+.form .card-five form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.form .card-five form textarea {
+  height: 60px;
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  border-radius: 1px;
+  resize: none;
+  width: 100%;
+}
+.form .card-five form textarea::placeholder {
+  padding: 5px;
+}
+.form .card-five form textarea.card-five__text-name {
+  margin-bottom: 15px;
+  width: 50%;
+  height: 100%;
+}
+.form .card-five form button {
+  margin-top: 25px;
+  background: #fdd639;
+  border-radius: 23px;
+  border: none;
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color: #333333;
+  padding: 13px 40px;
+  width: 60%;
+}
+
+@media (max-width: 720px) {
+  .container {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ul,
+li,
+ol,
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: none;
+  text-decoration: none;
+}
+
+a {
+  text-decoration-skip-ink: none;
+  text-decoration: none;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+/*# sourceMappingURL=all.css.map */
